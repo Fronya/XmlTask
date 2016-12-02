@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.fronya.com/Ingredient"
+        xmlns:xs="http://www.fronya.com/Ingredient">
+
+        <complexType name="Ingredient">
+            <sequence>
+                <element name="water" type="float"/>
+                <element name="sugar" type="float"/>
+                <element name="fructose" type="float"/>
+                <element name="typeChocolate" type="string"  minOccurs="0"/>
+                <element name="vanillin" type="float"/>
+            </sequence>
+        </complexType>
+
+</schema>

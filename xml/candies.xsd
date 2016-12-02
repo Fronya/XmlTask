@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:ing="http://www.fronya.com/Ingredient"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.fronya.com/Candies"
+        xmlns:cnd="http://www.fronya.com/Candies">
+    <import schemaLocation="ingredient.xsd"
+               namespace="http://www.fronya.com/Ingredient" />
+
+    <element name="candies">
+        <complexType>
+            <sequence>
+                <element name="candy" type="cnd:Candy" minOccurs="1"
+                         maxOccurs="unbounded" />
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="Candy">
+        <sequence>
+            <element name="name" type="string" />
+            <element name="energy" type="integer"/>
+            <element name="type" type="cnd:Type"/>
+            <element name="ingredient" type="ing:Ingredient"/>
+            <element name="nutritionValue" type="cnd:NutritionValue"/>
+        </sequence>
+    </complexType>
+
+    <simpleType name="Type">
+        <restriction base="string">
+            <enumeration value="Caramel"/>
+            <enumeration value="Iris"/>
+            <enumeration value="Chocolate"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="NutritionValue">
+        <sequence>
+            <element name="protein" type="float"/>
+            <element name="fat" type="float"/>
+            <element name="carbohydrate" type="float"/>
+        </sequence>
+    </complexType>
+</schema>

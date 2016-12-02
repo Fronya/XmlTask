@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<cnd:candies
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.fronya.com/Candies candies.xsd"
+        xmlns:cnd="http://www.fronya.com/Candies"
+        xmlns:ing="http://www.fronya.com/Ingredient">
+    <candy>
+        <name>Iris</name>
+        <energy>500</energy>
+        <type>Iris</type>
+        <ingredient>
+            <water>0.5</water>
+            <sugar>0.8</sugar>
+            <fructose>0.9</fructose>
+            <vanillin>1.5</vanillin>
+        </ingredient>
+        <nutritionValue>
+            <protein>0.5</protein>
+            <fat>5.5</fat>
+            <carbohydrate>20</carbohydrate>
+        </nutritionValue>
+    </candy>
+    <candy>
+        <name>Chocolate candy</name>
+        <energy>500</energy>
+        <type>Chocolate</type>
+        <ingredient>
+            <water>0.5</water>
+            <sugar>0.8</sugar>
+            <fructose>0.9</fructose>
+            <typeChocolate>Chocolate</typeChocolate>
+            <vanillin>1.5</vanillin>
+        </ingredient>
+        <nutritionValue>
+            <protein>0.5</protein>
+            <fat>5.5</fat>
+            <carbohydrate>20</carbohydrate>
+        </nutritionValue>
+    </candy>
+</cnd:candies>
